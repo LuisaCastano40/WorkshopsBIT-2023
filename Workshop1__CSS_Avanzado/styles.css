@@ -1,0 +1,144 @@
+/*--------------Fuentes a utilizar-------------*/
+@import url('https://fonts.cdnfonts.com/css/zilla-slab');
+
+/*-----------------Paleta de colores----------*/
+:root{
+    --colorFondo:#EBE3D6;
+    --colorOscuro:#54351A;
+    --colorClaro:#c59f61;
+    --text:'Zilla Slab', sans-serif;
+}
+
+/*-------------Condiciones iniciales----------*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    background-color: var(--colorFondo);
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+/*-------------------HEADER------------------*/
+/* contenedor header */
+.contenedor-header{
+    width: 100%;
+    height: 200px;
+    background-color: var(--colorClaro);
+    font-family: var(--text);
+    font-size: 30px;
+    color: var(--colorOscuro);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Slider */
+.contenedor-slider{
+    width: 80vw;
+    height: 80vh;
+    border: 5px solid var(--colorOscuro);
+    overflow: hidden;
+    margin: 50px auto;
+}
+.Slider{
+    display: flex;
+    animation-name: slide; /* nombre de la animación conectado con los keyframes */
+    animation-duration: 20s; /* tiempo total de ejecución de la animación*/
+    animation-iteration-count: infinite; /* cuantas veces queremos que se repita la animación */
+    animation-direction: alternate; /* como queremos que se mueva la animación (adelante o atrás) */
+    animation-timing-function: ease-in-out; /* forma en que queremos que se vea el movimiento */
+    animation-delay: .5s; /* tiempo que se toma la animación entre intervalo */
+   
+    /* animation: slide 30s infinite alternate ease-in-out 0.5s; */
+}
+
+@keyframes slide {
+    0%{transform: translateX(0%);}
+    25%{transform: translateX(-80vw);}
+    50%{transform: translateX(-160vw);}
+    75%{transform: translateX(-240vw);}
+    100%{transform: translateX(-320vw);}
+}
+.Slider img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/*--------------------MAIN------------------*/
+/* Sección - contenedor de todo el grid */
+.contenedor-grid{
+    width: 80%;
+    margin: auto;
+}
+
+/* Article - defino el grid */
+.menuContent{
+    background-color: black;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /*Me crea 3 columnas de igual tamaño*/
+    grid-template-rows: 1fr 1fr; /*Me crea 3 filas de igual tamaño*/  
+}
+
+/* contenedor de cada sección del menú */
+.menu{
+    position: relative; 
+    overflow: hidden;
+}
+.menu a{
+    font-family: 'Zilla Slab', sans-serif; 
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    color: #FFFF;
+    text-decoration: none;
+}
+.images{
+    width: 100%;
+    opacity: 0.5; 
+    transition: all 8s ease-out;
+}
+
+/* contenedor de los íconos */
+.menuIcons{
+    margin: 0;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.menuIcons h3{
+    margin: 10px;
+    padding: 0;
+}
+
+/* Cuando hover sobre la etiqueta a, cambie el color de la imágen y el texto h3 */
+/* link */
+.menu a:hover .menuIcons img, 
+.menu a:hover .menuIcons h3{
+    filter: invert(61%) sepia(85%) saturate(218%) hue-rotate(358deg) brightness(150%) contrast(95%);
+}
+.menu a:hover .images{
+    transform: scale(1.2);
+}
+
+/*-------------------FOOTER------------------*/
+/* contenedor */
+.contenedor-footer{
+    width: 100%;
+    height: 100px;
+    margin-top: 100px;
+    background-color: var(--colorClaro);
+    font-family: var(--text);
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--colorOscuro);
+}
