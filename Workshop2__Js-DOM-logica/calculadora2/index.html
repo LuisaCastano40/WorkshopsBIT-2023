@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Link a los estilos de la página -->
+    <link rel="stylesheet" href="styles.css">
+    <title>Reto | Calculadora</title>
+
+     <!-- Títulos y descripciones meta -->
+     <meta name="author" content="Luisa Castaño" />
+     <meta name="keywords" content="Workshop, BIT, js" />
+     <meta name="description" content="Workshop bases de js con manejo del DOM y práctica de lógica de programación mediante el uso de una calculadora" />
+</head>
+
+<body>
+
+    <h1>Calculadora</h1>
+    <h2>Por Luisa Vanegas</h2>
+    <h3>Reto Workshop 2</h3>
+    <br>
+    <section class="container-calculator">
+
+        <!-- Pantalla de la calculadora -->
+        <input class="container-screen" type="text" id="screen" readonly>
+
+        <!-- Botones -->
+        <div class="container-buttons" >
+
+            <button class="operator" id="C">C</button>
+            <button class="operator" id="DE">DE</button>
+            <button class="operator" value = "%" id="%">%</button>
+            <button class="operator" value="/">/</button>
+        
+            <button value="7">7</button>
+            <button value="8">8</button>
+            <button value="9">9</button>
+            <button class="operator" value="*">x</button>
+            
+            <button value="4">4</button>
+            <button value="5">5</button>
+            <button value="6">6</button>
+            <button class="operator" value="-">-</button>
+            
+            <button value="1">1</button>
+            <button value="2">2</button>
+            <button value="3">3</button>
+            <button class="operator" value="+">+</button>
+               
+            </button>
+            <button class="btn-0" value="0">0</button>
+            <button value=".">.</button>
+            <button class="operator" id="=">=</button>
+            
+        </div>
+    </section>
+    <script src="calculator.js"></script>
+</body>
+</html>

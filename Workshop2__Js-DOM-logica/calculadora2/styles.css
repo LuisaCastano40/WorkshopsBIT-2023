@@ -1,0 +1,99 @@
+@import url('https://fonts.cdnfonts.com/css/lt-binary-neue');
+@import url('https://fonts.cdnfonts.com/css/escopedia');
+
+/* CONDICIONES INICIALES */
+:root{
+    --colorFondo:#7995A8;
+    --colorFondo2:#F5F6FE;
+    --colorEnfasisFuerte:#B0D1D9;
+    --colorEnfasisSutil:#EBEDF2;
+    --colorTexto:#5B7D93;
+    --shadow:2px 2px 5px 0px #B0D1D9;
+    --tipografia:'LT Binary Neue Round', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorFondo);
+    font-family: 'Escopedia', sans-serif;
+    color:rgb(63, 63, 63);
+    gap: 10px;
+}
+
+/* ----------------------CALCULADORA-------------------- */
+.container-calculator{
+    border: solid 2px var(--colorEnfasisFuerte);
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: var(--shadow);  
+    overflow: hidden;
+}
+.container-screen{
+    width: 100%;
+    height: 150px;
+    border: none;
+    border-radius: 15px 15px 0px 0px;
+    background-color: var(--colorFondo2);
+    padding: 25px;
+    box-sizing: border-box;
+    text-align: end;
+    font-family: var(--tipografia);
+    font-size: 3rem;
+    color: var(--colorTexto);
+}
+.container-buttons{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2px;
+    background-color: var(--colorFondo2);
+}
+.container-buttons button{
+    border: none;
+    font-family: var(--tipografia);
+    font-size: 2rem;
+    color: var(--colorTexto);
+    background-color: var(--colorFondo2);
+}
+.container-buttons button:hover{
+    cursor: pointer;
+    background-color: var(--colorEnfasisFuerte);
+    color: var(--colorFondo2);
+}
+.container-buttons button:nth-child(4n){
+    background-color: var(--colorEnfasisFuerte);
+    color: var(--colorTexto);
+}
+.container-buttons button:nth-child(1){
+    background-color: var(--colorEnfasisSutil);
+    color: var(--colorTexto);
+}
+.container-buttons button:nth-child(2){
+    background-color: var(--colorEnfasisSutil);
+    color: var(--colorTexto);
+}
+.container-buttons button:nth-child(3){
+    background-color: var(--colorEnfasisSutil);
+    color: var(--colorTexto);
+}
+.btn-0{
+    grid-column: 1/3;
+}
+
+

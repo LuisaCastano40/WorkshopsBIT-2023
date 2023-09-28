@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- link de estilos -->
+    <link rel="stylesheet" href="calculadora.css">
+    <!-- <script src="calculadoraFnFecha.js"></script> -->
+    <script defer src="calculadoraFn.js"></script>
+
+    <title>Workshop2 | Calculadora básica</title>
+
+    <!-- Títulos y descripciones meta -->
+    <meta name="author" content="Luisa Castaño" />
+    <meta name="keywords" content="Workshop, BIT, js" />
+    <meta name="description" content="Workshop bases de js con manejo del DOM y práctica de lógica de programación mediante el uso de una calculadora" />
+</head>
+<body>
+
+    <header>
+        <h1>Workshop2: Manejo del DOM</h1>
+        <h2>Calculadora básica</h2>
+    </header>
+
+    <main> 
+        <section class="container-calculatora">
+            <!-- Pantalla de la calculadora -->
+            <article class="container-inputs">
+                <div id="pantalla"></div>
+                <input type="number" id="numero1" placeholder="Ingrese el primer número">
+                <input type="number" id="numero2" placeholder="Ingrese el segundo número"> 
+            </article>
+    
+            <article class="container-operaciones">
+                <button onclick="suma()">+</button>
+                <button onclick="resta()">-</button>
+                <button onclick="multiplicacion()">x</button>
+                <button onclick="division()">/</button>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>Realizado por &copy; Luisa Castaño 2023</p>
+    </footer>
+
+</body>
+</html>
