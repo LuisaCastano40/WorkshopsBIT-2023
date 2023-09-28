@@ -17,11 +17,11 @@ A continuación, se presentan los temas principales de este proyecto:
 |              Calculadora Básica               |              Reto Workshop 2           |
 
 ## Autor
-- [Nombre del Autor]
+- Luisa Fernanda Castaño Vanegas
 
 ## Copyright
-Material creado por [Luisa Castaño](https://github.com/LuisaCastano40)
----
+Material creado por [Luisa Castaño](https://github.com/LuisaCastano40)<br>
+
 Workshop organizado por BIT: Bogotá Institute of Technology.<br>
 
 ¡Gracias por participar en nuestro workshop!
