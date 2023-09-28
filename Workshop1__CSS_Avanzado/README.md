@@ -20,7 +20,7 @@ A continuación, se presentan los temas principales de este proyecto:
 - Luisa Fernanda Castaño Vanegas
 
 ## Copyright
-Material creado por [Luisa Castaño](https://github.com/LuisaCastano40)<br>
+Material creado por [Luisa Castaño](https://github.com/LuisaCastano40)<br>Todos los derechos reservados de las imágenes e iconos a [La Miguería](https://www.lamigueria.com.co/)<br>
 
 Workshop organizado por BIT: Bogotá Institute of Technology.<br>
 
