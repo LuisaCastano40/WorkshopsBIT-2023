@@ -27,13 +27,13 @@ function resta() {
     const numero1 = parseFloat(inputNumero1.value);
     const numero2 = parseFloat(inputNumero2.value);
     
-    if(numero1=='' || !numero2==''){
+    if(inputNumero1.value ==='' || inputNumero2.value===''){
+        alert('ingrese todos los datos');
+    }else{
         resultado = numero1 - numero2;
         pantalla.textContent = resultado.toFixed(2);
         inputNumero1.value = '';
         inputNumero2.value = '';
-    }else{
-        alert('ingrese todos los datos');
     }
 }
 
