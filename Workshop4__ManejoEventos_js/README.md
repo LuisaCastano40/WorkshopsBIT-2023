@@ -15,7 +15,7 @@ A continuación, se presentan los temas principales de este proyecto:
 ## Actividades
 | ![workshop4](images/imgProjecto.PNG) | ![workshop4_2](images/imgProjecto2.PNG) |![workshop4_3](images/imgProjecto3.png) |![workshop4_4](images/imgProjecto4.png) |
 |:----------------------------------------:|:------------------------------------------:|:------------------------------------------:|:------------------------------------------:|
-|              Proyecto workshop 4              |              Banner interactivo vista home           |        interactivo vista About           |     interactivo vista contact           |
+|              Proyecto workshop 4              |              Banner interactivo vista home           |     Banner   interactivo vista About           |   Banner  interactivo vista contact           |
 
 ## Autor
 - Luisa Fernanda Castaño Vanegas
