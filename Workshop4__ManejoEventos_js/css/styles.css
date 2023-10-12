@@ -42,6 +42,8 @@ header h2{
     font-size: 30px;
 }
 /* ---------MAIN---------- */
+
+/* sección del botón para abrir el banner */
 .container-clickme{
     padding: 20px 30px;
 }
@@ -58,6 +60,7 @@ header h2{
 .container-clickme button{
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
 }
+/* mensaje con animación que invita a dar click */
 .desplegable{
     font-family: var(--texto);
     font-size: 20px;
@@ -66,6 +69,7 @@ header h2{
     animation: move .7s infinite alternate ease-in-out;
     visibility: hidden;
 }
+/* animación hecha para que se mueva arriba y abajo */
 @keyframes move {
     from{transform: translateY(-10px);}
     to{transform: translateY(10px);}
@@ -75,6 +79,8 @@ header h2{
 }
 
 /* Baner */
+
+/* Contenedor que mostramos y ocultamos, contiene menú e imagenes */
 .container-banner{
     position: absolute;
     top: 0;
@@ -88,6 +94,8 @@ header h2{
 .container-nabvar{
     width: 100%;
 }
+
+/* contenedor de la lista del menú */
 .container-nabvar ul{
     width: 100%;
     height: 100%;
@@ -103,6 +111,8 @@ header h2{
     background-color: var(--colorNegro);
     color: var(--colorText);
 }
+
+/* Efecto de línea que se desliza al hacer hover sobre cada li */
 .container-nabvar li{
     cursor:pointer;
     padding: 5px 10px;
@@ -122,6 +132,8 @@ header h2{
 #navbar-list li:hover::before {
     width: 100%;
 }
+
+/* Contenedor de las imágenes del banner */
 .container-imgs{
     width: 100%;
     background-color: var(--colorText);
@@ -131,6 +143,8 @@ header h2{
     height: 100%;
     object-fit: cover;
 }
+
+/* botón para cerrar el banner interactivo */
 .close{
     width: 50px;
     height: 50px;
