@@ -1,0 +1,71 @@
+/* Variables en css */
+:root{
+  --colorNegro:#0000;
+  --colorGrisOscuro:#ABABAA;
+  --grisMedio:#838382;
+  --grisClaro:#C7C6C7;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  font-family:'Arial Narrow', Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: var(--grisClaro);
+}
+
+/* ------------HEADER------------- */
+
+.container-header{
+  height: 25vh;
+  display: grid;
+  place-content: center;
+}
+.container-main{
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  font-size: 30px;
+}
+#ahorcado{
+  width: 200px;
+  height: 150px;
+  border:2px solid var(--grisClaro);
+  background-color: var(--grisMedio);
+  display: grid;
+  place-content: center;
+}
+.enviarPalabra{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.enviarPalabra input{
+  height: 30px;
+  padding: 0 10px;
+}
+.btn-letra{
+  padding: 8px 25px;
+  text-transform: uppercase;
+  font-size: 13px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+.container-footer{
+  height: 10vh;
+  display: grid;
+  place-content: center;
+}
